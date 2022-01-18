@@ -67,4 +67,32 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
+  describe("When recibed as a paramaters -0 and 0", () => {
+    test("Then it should return true", () => {
+      //AAA
+      //Arrange
+      const a = -0;
+      const b = 0;
+      const expectedOutput = true;
+      //Act
+      const result = strictEquals(a, b);
+      //Assert
+      //expect("return from the function we are testing").toBe("result you expect it to have")
+      expect(result).toBe(expectedOutput);
+    });
+  });
+  describe("When recibed as a paramaters 1 and '1'", () => {
+    test("Then it should return true", () => {
+      //AAA
+      //Arrange
+      const a = 1;
+      const b = "1";
+      const expectedOutput = false;
+      //Act
+      const result = strictEquals(a, b);
+      //Assert
+      //expect("return from the function we are testing").toBe("result you expect it to have")
+      expect(result).toBe(expectedOutput);
+    });
+  });
 });
