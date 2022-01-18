@@ -25,7 +25,7 @@ function strictEquals(a, b) {
 
 //Given-When-Then
 describe("Given a function strictEquals(a,b)", () => {
-  describe("When recibed as a paramaters 1 and 1", () => {
+  describe("When the expressions recibed are 1 and 1", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
@@ -38,7 +38,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters NaN and Nan", () => {
+  describe("When the expressions recibed are NaN and Nan", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
@@ -51,7 +51,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters 0 and -0", () => {
+  describe("When the expressions recibed are 0 and -0", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
@@ -65,7 +65,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters -0 and 0", () => {
+  describe("When the expressions recibed are -0 and 0", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
@@ -79,7 +79,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters 1 and '1'", () => {
+  describe("When the expressions recibed are 1 and '1'", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
@@ -93,7 +93,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters true and false", () => {
+  describe("When the expressions recibed are true and false", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
@@ -107,7 +107,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters false and true", () => {
+  describe("When the expressions recibed are false and true", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
@@ -121,7 +121,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters false and false", () => {
+  describe("When the expressions recibed are false and false", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
@@ -134,7 +134,7 @@ describe("Given a function strictEquals(a,b)", () => {
       expect(result).toBe(expectedOutput);
     });
   });
-  describe("When recibed as a paramaters 'water' and 'oil'", () => {
+  describe("When the expressions recibed are 'water' and 'oil'", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
