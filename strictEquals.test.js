@@ -29,11 +29,10 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
-      const a = 1;
-      const b = 1;
+      const numberOne = 1;
       const expectedOutput = true;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(numberOne, numberOne);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -43,11 +42,10 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
-      const a = NaN;
-      const b = NaN;
+      const notANumber = NaN;
       const expectedOutput = false;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(notANumber, notANumber);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -57,11 +55,11 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
-      const a = 0;
-      const b = -0;
+      const zero = 0;
+      const minusZero = -0;
       const expectedOutput = true;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(zero, minusZero);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -71,11 +69,11 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
-      const a = -0;
-      const b = 0;
+      const minusZero = -0;
+      const zero = 0;
       const expectedOutput = true;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(minusZero, zero);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -85,11 +83,11 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return true", () => {
       //AAA
       //Arrange
-      const a = 1;
-      const b = "1";
+      const numberOne = 1;
+      const stringOne = "1";
       const expectedOutput = false;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(numberOne, stringOne);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -99,11 +97,11 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
-      const a = true;
-      const b = false;
+      const booleanTrue = true;
+      const booleanFalse = false;
       const expectedOutput = false;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(booleanTrue, booleanFalse);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -113,11 +111,11 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
-      const a = false;
-      const b = true;
+      const booleanFalse = false;
+      const booleanTrue = true;
       const expectedOutput = false;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(booleanFalse, booleanTrue);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -127,11 +125,10 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
-      const a = false;
-      const b = false;
+      const booleanFalse = false;
       const expectedOutput = true;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(booleanFalse, booleanFalse);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
@@ -141,11 +138,11 @@ describe("Given a function strictEquals(a,b)", () => {
     test("Then it should return false", () => {
       //AAA
       //Arrange
-      const a = "water";
-      const b = "oil";
+      const stringWater = "water";
+      const stringOil = "oil";
       const expectedOutput = false;
       //Act
-      const result = strictEquals(a, b);
+      const result = strictEquals(stringWater, stringOil);
       //Assert
       //expect("return from the function we are testing").toBe("result you expect it to have")
       expect(result).toBe(expectedOutput);
