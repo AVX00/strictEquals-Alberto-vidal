@@ -1,0 +1,15 @@
+{
+  "name": "strictequals",
+  "version": "1.0.0",
+  "description": "Escribe una función llamada `strictEquals(a, b)` que devuelva el mismo valor que `a === b`. Tu implementación no puede usar los operadores `===` ni `!==`.",
+  "main": "strictEquals.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.0"
+  }
+}
